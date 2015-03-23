@@ -1,0 +1,34 @@
+#graph.BFSBig /input/2.txt /output/spark/bfs/2
+#graph.BFSBig /input/15000.txt /output/spark/bfs/15000
+#graph.BFSBig /input/42000.txt /output/spark/bfs/42000
+#graph.BFSBig /input/90000.txt  /output/spark/bfs/90000
+#graph.SSSPBig /input/42000.txt /output/spark/bfs/42000
+#graph.SSSPBig /input/90000.txt /output/spark/bfs/90000
+#graph.PageRankBagel /input/15000.txt /output/spark/bfs/15000
+#graph.PageRankBagel /input/42000.txt /output/spark/bfs/42000
+#graph.PageRankBagel /input/90000.txt /output/spark/bfs/90000
+#graph.SSSPBagel /input/15000.txt /output/spark/sssp/15000
+#graph.SSSPBagel /input/42000.txt /output/spark/sssp/42000
+#graph.SSSPBagel /input/1000000.txt /output/spark/sssp/1000000
+#SSSP /input/2.txt /output/hama/sssp/2
+#SSSP /input/1.txt /output/hama/sssp/1
+#SSSP /input/4.txt /output/hama/sssp/4
+#SSSP /input/1.txt /output/hama/sssp/1
+#SSSP /input/2.txt /output/hama/sssp/2
+#SSSP /input/15000.txt /output/hama/sssp/15000
+#SSSP /input/42000.txt /output/hama/sssp/42000
+#SSSP /input/1000000.txt /output/hama/sssp/1000000
+#PageRank /input/15000.txt /output/hama/pr/15000
+#PageRank /input/42000.txt /output/hama/pr/42000
+#PageRank /input/1000000.txt /output/hama/pr/1000000
+#PageRank /input/1.txt /output/hama/pr/1
+#class input med_input output
+#SSSP /input/1.txt /input/hadoop/sssp/1 /output/hadoop/sssp/1 n
+#SSSP /input/2.txt /input/hadoop/sssp/2 /output/hadoop/sssp/2 n
+#SSSP /input/15000.txt /input/hadoop/sssp/15000 /output/hadoop/sssp/15000 n
+#SSSP /input/42000.txt /input/hadoop/sssp/42000 /output/hadoop/sssp/42000 n
+#Pagerank /input/2.txt /input/hadoop/pr/2 /output/hadoop/pr/2 y
+Pagerank /input/15000.txt /input/hadoop/pr/15000 /output/hadoop/pr/15000 n
+Pagerank /input/42000.txt /input/hadoop/pr/42000 /output/hadoop/pr/42000 n
+#BFS /input/15000.txt /input/hadoop/bfs/15000 /output/hadoop/bfs/15000 n
+#BFS /input/42000.txt /input/hadoop/bfs/42000 /output/hadoop/bfs/42000 n

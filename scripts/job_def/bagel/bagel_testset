@@ -1,0 +1,17 @@
+#graph.BFSBig /input/2.txt /output/spark/bfs/2
+#graph.BFSBig /input/15000.txt /output/spark/bfs/15000
+#graph.BFSBig /input/42000.txt /output/spark/bfs/42000
+#graph.BFSBig /input/90000.txt  /output/spark/bfs/90000
+#graph.SSSPBig /input/42000.txt /output/spark/bfs/42000
+#graph.SSSPBig /input/90000.txt /output/spark/bfs/90000
+#graph.PageRankBagel /input/15000.txt /output/spark/bfs/15000
+#graph.PageRankBagel /input/42000.txt /output/spark/bfs/42000
+#graph.PageRankBagel /input/90000.txt /output/spark/bfs/90000
+#graph.SSSPBagel /input/15000.txt /output/spark/sssp/15000
+#graph.SSSPBagel /input/42000.txt /output/spark/sssp/42000
+#graph.SSSPBagel /input/1000000.txt /output/spark/sssp/1000000
+#graph.PageRankBagel /input/15000.txt /output/spark/pr/15000
+#graph.PageRankBagel /input/42000.txt /output/spark/pr/42000
+#graph.PageRankBagel /input/1000000.txt /output/spark/pr/1000000
+graph.BFSBagel /input/15000.txt /output/bagel/bfs/15000
+graph.BFSBagel /input/42000.txt /output/bagel/bfs/42000

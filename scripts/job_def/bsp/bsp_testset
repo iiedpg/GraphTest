@@ -1,0 +1,49 @@
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/2.txt /output/bsp/pr2 4 3
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/2.txt /output/bsp/sssp2 4 3
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/ea.txt /output/bsp/pr/ea 4 3
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/eb.txt /output/bsp/pr/eb 4 3
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/ed.txt /output/bsp/pr/ed 4 3
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/ef.txt /output/bsp/pr/ef 4 3
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/eg.txt /output/bsp/pr/eg 4 3
+#headers/sssp.h algorithms/libbsp_sssp.so /input/2.txt /output/bsp/sssp_2 4 3
+#headers/sssp.h algorithms/libbsp_sssp.so /input/2.txt /output/bsp/sssp2 4 3
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/g_whole_100.txt /output/bsp/pr/gw100 4 3
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/ea.txt /output/bsp/pr/ea 15 10 
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/eb.txt /output/bsp/pr/eb 4 3
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/ed.txt /output/bsp/pr/ed 15 10
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/ef.txt /output/bsp/pr/ef 4 3
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/eg.txt /output/bsp/pr/eg 15 10
+#headers/sssp.h algorithms/libbsp_sssp.so /input/ea.txt /output/bsp/sssp/ea 4 0 
+#headers/sssp.h algorithms/libbsp_sssp.so /input/ed.txt /output/bsp/sssp/ed 15 0 
+#headers/sssp.h algorithms/libbsp_sssp.so /input/eg.txt /output/bsp/sssp/eg 15 0 
+#headers/bfs.h algorithms/libbsp_bfs.so /input/ea.txt /output/bsp/bfs/ea 15 0 
+#headers/bfs.h algorithms/libbsp_bfs.so /input/ed.txt /output/bsp/bfs/ed 15 0 
+#headers/bfs.h algorithms/libbsp_bfs.so /input/eg.txt /output/bsp/bfs/eg 15 0 
+#headers/pagerank.h algorithms/libbsp_pagerank.so /input/cluster/ok_100.txt /output/bsp/pr/ok_100 15 10
+#headers/sssp.h algorithms/libbsp_sssp.so /input/2.txt /LeoCluster/0#onPopupPost()
+#output/bsp/sssp_2 4 3
+#headers/pr_cluster.h algorithms/libbsp_pr_cluster.so /input/cluster/wa-2011.txt /output/pagerank/pr_cluster/wa.txt 15 10
+#headers/pr_cluster.h algorithms/libbsp_pr_cluster.so /input/cluster/enron.txt /output/pagerank/pr_cluster/ok_enron.txt 15 10
+#headers/pr_cluster.h algorithms/libbsp_pr_cluster.so /input/cluster/dblp-2010.txt /output/pagerank/pr_cluster/ok_dblp 15 10
+#headers/pr_cluster.h algorithms/libbsp_pr_cluster.so /input/cluster/eu.txt /output/pagerank/pr_cluster/ok_enu 15 10
+#headers/semi_cluster.h algorithms/libbsp_semi_cluster.so /input/cluster0604/ok_1000.txt /output/pagerank/semi_cluster/ok_1000 15 10
+#headers/semi_cluster.h algorithms/libbsp_semi_cluster.so /input/cluster0604/ok_1200.txt /output/pagerank/semi_cluster/ok_1200 15 10
+#headers/semi_cluster.h algorithms/libbsp_semi_cluster.so /input/cluster0604/ok_2200.txt /output/pagerank/semi_cluster/ok_2200 15 10
+#headers/semi_cluster.h algorithms/libbsp_semi_cluster.so /input/cluster/ok_enron.txt /output/pagerank/semi_cluster/ok_enron 15 10
+#headers/semi_cluster.h algorithms/libbsp_semi_cluster.so /input/cluster/ok_dblp-2010.txt /output/pagerank/semi_cluster/ok_dblp-2010 15 10
+#headers/semi_cluster.h algorithms/libbsp_semi_cluster.so /input/cluster/ok_enu.txt /output/pagerank/semi_cluster/ok_enu 15 10
+#headers/friend.h algorithms/libbsp_friend.so /output/ud/onemi/1/part-r-00000 /output/test/onemi 4 10
+#headers/friend.h algorithms/libbsp_friend.so /input/onemi.txt /output/test/onemi1 4 10
+#headers/friend.h algorithms/libbsp_friend.so /input/thirty.txt /output/test/th 4 10
+headers/friend.h algorithms/libbsp_friend.so /input/del/seven /output/improve/seven_del 4 10
+#headers/friend.h algorithms/libbsp_friend.so /input/onemi.txt /output/test/su 4 10
+#headers/friend.h algorithms/libbsp_friend.so /output/ud/thirty/1/part-r-00000 /output/test/su 4 10
+#headers/friend.h algorithms/libbsp_friend.so /output/ud/onemi/1/part-r-00000 /output/test/onemi2 4 10
+#headers/pagerank_2.h algorithms/libbsp_pagerank_2.so /input/1.txt /output/test/2/1 2 4
+#headers/pagerank_2.h algorithms/libbsp_pagerank_2.so /input/gy/9.txt /output/test/2/9 16 4
+#headers/pagerank_2.h algorithms/libbsp_pagerank_2.so /input/gy/4.txt /output/test/2/4 16 4
+#headers/pagerank_2.h algorithms/libbsp_pagerank_2.so /input/gy/6.txt /output/test/2/6 16 4
+#headers/pagerank_2.h algorithms/libbsp_pagerank_2.so /input/gy/11.txt /output/test/2/11 16 4
+#headers/pagerank_2.h algorithms/libbsp_pagerank_2.so /input/gy/5.txt /output/test/160ost()
+#2/5 16 4
+#headers/pagerank_2.h algorithms/libbsp_pagerank_2.so /input/gy/8.txt /output/test/2/8 16 4

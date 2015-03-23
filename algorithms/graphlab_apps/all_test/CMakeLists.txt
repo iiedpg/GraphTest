@@ -1,0 +1,6 @@
+project(all_test)
+add_graphlab_executable(my_pagerank pagerank.cpp)
+add_graphlab_executable(my_sssp sssp.cpp)
+add_graphlab_executable(my_bfs bfs.cpp)
+add_graphlab_executable(my_mst mst.cpp)
+add_graphlab_executable(my_standard standard.cpp)

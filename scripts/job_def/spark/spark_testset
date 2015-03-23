@@ -1,0 +1,78 @@
+#graph.BFSBig /input/2.txt /output/spark/bfs/2
+#graph.BFSBig /input/15000.txt /output/spark/bfs/15000
+#graph.BFSBig /input/42000.txt /output/spark/bfs/42000
+#graph.BFSBig /input/90000.txt  /output/spark/bfs/90000
+#graph.SSSPBig /input/15000.txt /output/spark/bfs/15000
+#graph.SSSPBig /input/42000.txt /output/spark/bfs/42000
+#graph.SSSPBig /input/90000.txt /output/spark/bfs/90000
+#graph.PageRankBig /input/15000.txt /output/spark/pr/15000
+#graph.PageRankBig /input/42000.txt /output/spark/pr/42000
+#graph.PageRankBig /input/90000.txt /output/spark/pr/90000
+#graph.BFSBig /input/2.txt /output/spark/bfs/2
+#graph.BFSBig /input/15000.txt /output/spark/bfs/15000
+#graph.BFSBig /input/2.txt /output/spark/bfs/2
+#graph.BFSBig /input/42000.txt /output/spark/bfs/42000
+#graph.BFSBig /input/90000.txt  /output/spark/bfs/90000
+#graph.SSSPBig /input/15000.txt /output/spark/sssp/15000
+#graph.SSSPBig /input/90000.txt /output/spark/bfs/90000
+#dummy.ReduceTest /performance/input/1.txt /performance/output/1.txt
+#graph.PageRankBig /input/15000.txt /output/spark/sssp/15000
+#graph.PageRankBig /input/2.txt /output/spark/sssp/2 4 5 
+#graph.PageRankBig /input/15000.txt /output/spark/pr/15000 4 3
+#graph.PageRankBig /input/15000.txt /output/spark/sssp/15000 8 5
+#graph.PageRankBig /input/15000.txt /output/spark/sssp/15000 16 5
+#graph.PageRankBig /input/15000.txt /output/spark/pr/15000 2 3
+#graph.PageRankBig /input/15000.txt /output/spark/pr/15000 2 3
+#graph.PageRankBig /input/15000.txt /output/spark/pr/15000 2 3
+#graph.PageRankBig /input/15000.txt /output/spark/pr/15000 2 3
+#graph.PageRankBig /input/ea.txt /output/spark/pr/ea 15 10
+#graph.PageRankBig /input/eb.txt /output/spark/pr/eb 4 3
+#graph.PageRankBig /input/ed.txt /output/spark/pr/ed 15 10
+#graph.PageRankBig /input/ef.txt /output/spark/pr/ef 4 3
+#graph.PageRankBig /input/eg.txt /output/spark/pr/eg 15 10
+#graph.PageRankBig /input/2.txt /output/spark/sssp/2 4 5 
+#graph.SSSPBig /input/ea.txt /output/spark/sssp/ea 15 10
+#graph.SSSPBig /input/2.txt /output/spark/sssp/2 4 0 
+#graph.SSSPBig /input/2.txt /output/spark/sssp/2 4 0 
+#graph.PageRankBig /input/1.txt /output/spark/pr/1 2 10
+#graph.PageRankBig /input/gy/9.txt /output/spark/pr/9 64 4
+#graph.PageRankBig /input/gy/9.txt /output/spark/pr/9 32 4
+#graph.PageRankBig /input/gy/9.txt /output/spark/pr/9 16 4
+#graph.PageRankBig /input/gy/9.txt /output/spark/pr/9 8 4
+#graph.PageRankBig /input/gy/9.txt /output/spark/pr/9 4 4
+#graph.PageRankBig /input/gy/9.txt /output/spark/pr/9 2 4
+#graph.PageRankBig /input/gy/4.txt /output/spark/pr/9 64 4
+#graph.PageRankBig /input/gy/4.txt /output/spark/pr/9 32 4
+#graph.PageRankBig /input/gy/4.txt /output/spark/pr/9 16 4
+#graph.PageRankBig /input/gy/4.txt /output/spark/pr/9 8 4
+#graph.PageRankBig /input/gy/4.txt /output/spark/pr/9 4 4
+#graph.PageRankBig /input/gy/4.txt /output/spark/pr/9 2 4
+#graph.PageRankBig /input/gy/6.txt /output/spark/pr/9 64 4
+#graph.PageRankBig /input/gy/6.txt /output/spark/pr/9 32 4
+#graph.PageRankBig /input/gy/6.txt /output/spark/pr/9 16 4
+#graph.PageRankBig /input/gy/6.txt /output/spark/pr/9 8 4
+#graph.PageRankBig /input/gy/6.txt /output/spark/pr/9 4 4
+#graph.PageRankBig /input/gy/6.txt /output/spark/pr/9 2 4
+#graph.PageRankBig /input/gy/11.txt /output/spark/pr/9 64 4
+#graph.PageRankBig /input/gy/11.txt /output/spark/pr/9 32 4
+#graph.PageRankBig /input/gy/11.txt /output/spark/pr/9 16 4
+#graph.PageRankBig /input/gy/11.txt /output/spark/pr/9 8 4
+#graph.PageRankBig /input/gy/11.txt /output/spark/pr/9 4 4
+#graph.PageRankBig /input/gy/11.txt /output/spark/pr/9 2 4
+#graph.PageRankBig /input/gy/5.txt /output/spark/pr/9 64 4
+#graph.PageRankBig /input/gy/5.txt /output/spark/pr/9 32 4
+#graph.PageRankBig /input/gy/5.txt /output/spark/pr/9 16 4
+#graph.PageRankBig /input/gy/5.txt /output/spark/pr/9 8 4
+#graph.PageRankBig /input/gy/5.txt /output/spark/pr/9 4 4
+#graph.PageRankBig /input/gy/5.txt /output/spark/pr/9 2 4
+graph.PageRankBig /input/gy/7.txt /output/spark/pr/7 64 4
+#graph.PageRankBig /input/gy/7.txt /output/spark/pr/7 32 4
+#graph.PageRankBig /input/gy/7.txt /output/spark/pr/7 16 4
+#graph.PageRankBig /input/gy/7.txt /output/spark/pr/7 8 4
+#graph.PageRankBig /input/gy/7.txt /output/spark/pr/7 4 4
+#graph.PageRankBig /input/gy/7.txt /output/spark/pr/9 2 4
+#graph.PageRankBig /input/gy/4.txt /output/spark/pr/4 16 4
+#graph.PageRankBig /input/gy/6.txt /output/spark/pr/6 16 4
+#graph.PageRankBig /input/gy/5.txt /output/spark/pr/5 16 4
+#graph.PageRankBig /input/gy/11.txt /output/spark/pr/11 16 4
+#graph.PageRankBig /input/gy/8.txt /output/spark/pr/8 16 4

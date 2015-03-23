@@ -1,0 +1,202 @@
+#graph.BFSBig /input/2.txt /output/spark/bfs/2
+#graph.BFSBig /input/15000.txt /output/spark/bfs/15000
+#graph.BFSBig /input/42000.txt /output/spark/bfs/42000
+#graph.BFSBig /input/90000.txt  /output/spark/bfs/90000
+#graph.SSSPBig /input/42000.txt /output/spark/bfs/42000
+#graph.SSSPBig /input/90000.txt /output/spark/bfs/90000
+#graph.PageRankBagel /input/15000.txt /output/spark/bfs/15000
+#graph.PageRankBagel /input/42000.txt /output/spark/bfs/42000
+#graph.PageRankBagel /input/90000.txt /output/spark/bfs/90000
+#graph.SSSPBagel /input/15000.txt /output/spark/sssp/15000
+#graph.SSSPBagel /input/42000.txt /output/spark/sssp/42000
+#graph.SSSPBagel /input/1000000.txt /output/spark/sssp/1000000
+#SSSP /input/2.txt /output/hama/sssp/2
+#SSSP /input/1.txt /output/hama/sssp/1
+#SSSP /input/4.txt /output/hama/sssp/4
+#SSSP /input/1.txt /output/hama/sssp/1
+#SSSP /input/2.txt /output/hama/sssp/2
+#SSSP /input/15000.txt /output/hama/sssp/15000
+#SSSP /input/42000.txt /output/hama/sssp/42000
+#SSSP /input/1000000.txt /output/hama/sssp/1000000
+#PageRank /input/15000.txt /output/hama/pr/15000
+#PageRank /input/42000.txt /output/hama/pr/42000
+#PageRank /input/1000000.txt /output/hama/pr/1000000
+#PageRank /input/1.txt /output/hama/pr/1
+#class input med_input output
+#SSSP /input/1.txt /input/hadoop/sssp/1 /output/hadoop/sssp/1 n
+#SSSP /input/2.txt /input/hadoop/sssp/2 /output/hadoop/sssp/2 n
+#SSSP /input/15000.txt /input/hadoop/sssp/15000 /output/hadoop/sssp/15000 n
+#SSSP /input/42000.txt /input/hadoop/sssp/42000 /output/hadoop/sssp/42000 n
+#PageRank /input/15000.txt /output/giraph/pr/15000 2 4
+#PageRank /input/15000.txt /output/giraph/pr/15000 2 2
+#PageRank /input/15000.txt /output/giraph/pr/15000 4 2
+#PageRank /input/15000.txt /output/giraph/pr/15000 8 2
+#PageRank /input/15000.txt /output/giraph/pr/15000 16 2
+#PageRank /input/15000.txt /output/giraph/pr/15000 32 2
+#PageRank /input/15000.txt /output/giraph/pr/15000 8 4
+#PageRank /input/ec.txt /output/giraph/pr/ec 4 2
+#PageRank /input/ed.txt /output/giraph/pr/ed 2 2
+#PageRank /input/15000.txt /output/giraph/pr/15000 2 2
+#PageRank /input/15000.txt /output/giraph/pr/15000 4 2
+#PageRank /input/ea.txt /output/giraph/pr/ea 9 9
+#PageRank /input/eb.txt /output/giraph/pr/ec 4 2
+#PageRank /input/ed.txt /output/giraph/pr/ec 4 2
+#PageRank /input/ef.txt /output/giraph/pr/ef 4 2
+#PageRank /input/eg.txt /output/giraph/pr/eg 9 9
+#PageRank /input/eg.txt /output/giraph/pr/eg 4 2
+#MST /uinput/1.txt /output/giraph/mst/ea 2 2
+#MST /uinput/ea.txt /output/giraph/mst/ea 9 2
+#MST /uinput/ed.txt /output/giraph/mst/ed 9 2
+#MST /uinput/eg.txt /output/giraph/mst/eg 9 2
+#SSSP /input/1.txt /output/giraph/sssp/1 2 4
+#PageRank /input/gy/1.txt /output/giraph/pr/ 4 4
+#SSSP /input/1.txt /output/giraph/sssp/gy/1 4 0
+#SSSP /winput/1.txt /output/giraph/sssp/gy/1 4 0
+#SSSP /winput/2.txt /output/giraph/sssp/gy/2 4 0
+#SSSP /winput/3.txt /output/giraph/sssp/gy/3 4 0
+#SSSP /winput/4.txt /output/giraph/sssp/gy/4 4 0
+#SSSP /winput/5.txt /output/giraph/sssp/gy/5 4 0
+#SSSP /winput/6.txt /output/giraph/sssp/gy/6 4 0
+#SSSP /winput/1.txt /output/giraph/sssp/gy/1 8 0
+#SSSP /winput/2.txt /output/giraph/sssp/gy/2 8 0
+#SSSP /winput/3.txt /output/giraph/sssp/gy/3 8 0
+#SSSP /winput/4.txt /output/giraph/sssp/gy/4 8 0
+#SSSP /winput/5.txt /output/giraph/sssp/gy/5 8 0
+#SSSP /winput/6.txt /output/giraph/sssp/gy/6 8 0
+#SSSP /input/gy/1.txt /output/giraph/sssp/gy/1 4 0
+#SSSP /input/gy/1.txt /output/giraph/sssp/gy/1 8 0
+#SSSP /input/gy/2.txt /output/giraph/sssp/gy/1 4 0
+#SSSP /input/gy/2.txt /output/giraph/sssp/gy/1 8 0
+#SSSP /input/gy/3.txt /output/giraph/sssp/gy/1 4 0
+#SSSP /input/gy/3.txt /output/giraph/sssp/gy/1 8 0
+#SSSP /input/gy/4.txt /output/giraph/sssp/gy/1 4 0
+#SSSP /input/gy/4.txt /output/giraph/sssp/gy/1 8 0
+#SSSP /input/gy/5.txt /output/giraph/sssp/gy/1 4 0
+#SSSP /input/gy/5.txt /output/giraph/sssp/gy/1 8 0
+#SSSP /input/gy/6.txt /output/giraph/sssp/gy/1 4 0
+#SSSP /input/gy/6.txt /output/giraph/sssp/gy/1 8 0
+#PageRank /input/1.txt /output/giraph/pr/1 4 5
+#PageRank /input/gy/1.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/1.txt /output/giraph/pr/gy/1 8 5
+#PageRank /input/gy/2.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/2.txt /output/giraph/pr/gy/1 8 5
+#PageRank /input/gy/3.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/3.txt /output/giraph/pr/gy/1 8 5
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/1 8 5
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/1 8 5
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/1 8 5
+#MST /uinput/1.txt /output/giraph/u/mst/1 4 0
+#MST /uinput/ea.txt /output/giraph/gy/mst/ea 4 0
+#MST /uinput/gy/1.txt /output/giraph/gy/mst/1 4 0
+#MST /uinput/gy/1.txt /output/giraph/gy/mst/1 8 0
+#MST /uinput/gy/2.txt /output/giraph/gy/mst/2 4 0
+#MST /uinput/gy/2.txt /output/giraph/gy/mst/2 8 0
+#MST /uinput/gy/3.txt /output/giraph/gy/mst/3 4 0
+#MST /uinput/gy/3.txt /output/giraph/gy/mst/3 8 0
+#MST /uinput/gy/4.txt /output/giraph/gy/mst/4 4 0
+#MST /uinput/gy/4.txt /output/giraph/gy/mst/4 8 0
+#MST /uinput/gy/5.txt /output/giraph/gy/mst/5 4 0
+#MST /uinput/gy/5.txt /output/giraph/gy/mst/5 8 0
+#MST /uinput/gy/6.txt /output/giraph/gy/mst/6 4 0
+#MST /uinput/gy/6.txt /output/giraph/gy/mst/6 8 0
+#Standard /input/whole/1000.txt /output/giraph/std/gy/1 5 20
+#Standard /input/whole/2000.txt /output/giraph/std/gy/2 5 20
+#Standard /input/whole/1746.txt /output/giraph/std/gy/1.7 5 20 
+#Standard /input/whole/2271.txt /output/giraph/std/gy/2.2 5 20 
+#Standard /input/whole/5000.txt /output/giraph/std/gy/5 5 20 
+#Standard /input/whole/10000.txt /output/giraph/std/gy/10 5 20
+#Standard /input/whole/20000.txt /output/giraph/std/gy/20 5 20
+#Standard /input/whole/15000.txt /output/giraph/std/gy/15 5 20 
+#Standard /input/whole/25000.txt /output/giraph/std/gy/25 5 20 
+#Standard /input/whole/30000.txt /output/giraph/std/gy/30 5 20 
+#Standard /input/whole/35000.txt /output/giraph/std/gy/35 5 20 
+#Standard /input/whole/40000.txt /output/giraph/std/gy/40 5 20 
+#Standard /input/whole/45000.txt /output/giraph/std/gy/45 5 20 
+#MST /uinput/gy/1.txt /output/giraph/gy/mst/1 4 0
+#MST /uinput/gy/1.txt /output/giraph/gy/mst/1 8 0
+#MST /uinput/gy/1.txt /output/giraph/gy/mst/1 4 0
+#MST /uinput/gy/2.txt /output/giraph/gy/mst/2 4 0
+#MST /uinput/gy/3.txt /output/giraph/gy/mst/3 4 0
+#MST /uinput/gy/4.txt /output/giraph/gy/mst/4 4 0
+#MST /uinput/gy/5.txt /output/giraph/gy/mst/5 4 0
+#MST /uinput/gy/6.txt /output/giraph/gy/mst/6 4 0
+#SSSP /winput/1.txt /output/giraph/sssp/gy/1 5 0
+#SSSP /winput/2.txt /output/giraph/sssp/gy/2 4 0
+#SSSP /winput/3.txt /output/giraph/sssp/gy/3 4 0
+#SSSP /winput/4.txt /output/giraph/sssp/gy/4 4 0
+#SSSP /winput/5.txt /output/giraph/sssp/gy/5 4 0
+#SSSP /winput/6.txt /output/giraph/sssp/gy/6 4 0
+#PageRank /input/gy/1.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/2.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/3.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/1 4 20
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/1 4 20
+#SSSP /winput/9.txt /output/giraph/sssp/gy/9 5 0
+#SSSP /winput/4.txt /output/giraph/sssp/gy/4 5 0
+#SSSP /winput/5.txt /output/giraph/sssp/gy/5 5 0
+#SSSP /winput/6.txt /output/giraph/sssp/gy/6 5 0
+#SSSP /winput/7.txt /output/giraph/sssp/gy/7 5 0
+#SSSP /winput/8.txt /output/giraph/sssp/gy/8 5 0
+#SSSP /winput/11.txt /output/giraph/sssp/gy/11 5 0
+#PageRank /input/gy/9.txt /output/giraph/pr/gy/9 5 20
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/4 5 20
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/5 5 20
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/6 5 20
+#PageRank /input/gy/7.txt /output/giraph/pr/gy/7 5 20
+#PageRank /input/gy/8.txt /output/giraph/pr/gy/8 5 20
+#PageRank /input/gy/11.txt /output/giraph/pr/gy/11 5 20
+#MST /uinput/gy/9.txt /output/giraph/gy/mst/9 5 0
+#MST /uinput/gy/4.txt /output/giraph/gy/mst/4 5 0
+#MST /uinput/gy/5.txt /output/giraph/gy/mst/5 5 0
+#MST /uinput/gy/6.txt /output/giraph/gy/mst/6 5 0
+#MST /uinput/gy/7.txt /output/giraph/gy/mst/7 5 0
+#MST /uinput/gy/8.txt /output/giraph/gy/mst/8 5 0
+#MST /uinput/gy/10.txt /output/giraph/gy/mst/10 5 0
+#MST /uinput/gy/11.txt /output/giraph/gy/mst/11 5 0
+#PageRank /input/gy/9.txt /output/giraph/pr/gy/9 5 2 
+#PageRank /input/gy/9.txt /output/giraph/pr/gy/9 32 2 
+#PageRank /input/gy/9.txt /output/giraph/pr/gy/9 16 2 
+#PageRank /input/gy/9.txt /output/giraph/pr/gy/9 8 2 
+#PageRank /input/gy/9.txt /output/giraph/pr/gy/9 4 2 
+#PageRank /input/gy/9.txt /output/giraph/pr/gy/9 2 2 
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/9 64 2 
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/9 32 2 
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/9 16 2 
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/9 8 2 
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/9 4 2 
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/9 2 2 
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/9 64 2 
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/9 32 2 
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/9 16 2 
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/9 8 2 
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/9 4 2 
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/9 2 2 
+#PageRank /input/gy/11.txt /output/giraph/pr/gy/9 64 2 
+#PageRank /input/gy/11.txt /output/giraph/pr/gy/9 32 2 
+#PageRank /input/gy/11.txt /output/giraph/pr/gy/9 16 2 
+#PageRank /input/gy/11.txt /output/giraph/pr/gy/9 8 2 
+#PageRank /input/gy/11.txt /output/giraph/pr/gy/9 4 2 
+#PageRank /input/gy/11.txt /output/giraph/pr/gy/9 2 2 
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/9 64 2 
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/9 32 2 
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/9 16 2 
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/9 8 2 
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/9 4 2 
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/9 2 2 
+#PageRank /input/gy/7.txt /output/giraph/pr/gy/9 64 2 
+#PageRank /input/gy/7.txt /output/giraph/pr/gy/9 32 2 
+#PageRank /input/gy/7.txt /output/giraph/pr/gy/9 16 2 
+#PageRank /input/gy/7.txt /output/giraph/pr/gy/9 8 2 
+#PageRank /input/gy/7.txt /output/giraph/pr/gy/9 4 2 
+#PageRank /input/gy/7.txt /output/giraph/pr/gy/9 2 2 
+#PageRank /input/gy/4.txt /output/giraph/pr/gy/4 16 2
+#PageRank /input/gy/5.txt /output/giraph/pr/gy/5 16 2
+#PageRank /input/gy/6.txt /output/giraph/pr/gy/6 16 2
+#PageRank /input/gy/11.txt /output/giraph/pr/gy/11 2 2
+#PageRank /input/gy/7.txt /output/giraph/pr/gy/7 16 2
+PageRank /input/gy/8.txt /output/giraph/pr/gy/8 16 2
+#PageRank /input/gy/12.txt /output/giraph/pr/gy/12 16 2

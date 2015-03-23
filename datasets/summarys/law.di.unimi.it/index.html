@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+    <meta name="keywords" content="graph compression, web graph, Java">
+    <style type="text/css">
+      @import "/css/content.php";
+      @import "/css/layout.php";
+    </style>
+    <title>WebGraph</title> 
+  </head> 
+  <body>
+    <div id=header>:::WebGraph</div>
+
+    <div id=left>
+      <ul id="left-nav">
+		<li><a href="http://vigna.di.unimi.it/">Home<span class=arrow>&#10132;</span></a></li>
+	<li><a href="http://vigna.di.unimi.it/papers.php">Publications<span class=arrow>&#10132;</span></a>
+      <li><a href="http://vigna.di.unimi.it/software.php">Software<span class=arrow>&#10132;</span></a>
+            <li><a href="http://rng.di.unimi.it/"><code>xorshift*</code><span class=arrow>&#10132;</span></a><li><a href="http://erw.di.unimi.it/">ERW<span class=arrow>&#10132;</span></a>
+      <li><a href="http://fastutil.di.unimi.it/"><code>fastutil</code><span class=arrow>&#10132;</span></a><li><a href="http://dsiutils.di.unimi.it/">DSI utilities<span class=arrow>&#10132;</span></a>
+      <li><a href="http://mg4j.di.unimi.it/">MG4J<span class=arrow>&#10132;</span></a><li><a href="http://archive4j.di.unimi.it/">Archive4J<span class=arrow>&#10132;</span></a>
+      <li><strong><a href="http://webgraph.di.unimi.it/">WebGraph</a></strong>
+      <ul>
+        <li><a href="#install">Installation</A></li>
+        <li><a href="#webgraph++">WebGraph++</A></li>
+        <li><a href="#pyWebgraph">pyWebgraph</A></li>
+        <li><a href="#MATLAB">MATLAB® support</A></li>
+        <li><a href="http://law.di.unimi.it/datasets.php">Datasets</A></li>
+      </ul>
+      <li><a href="http://sux.di.unimi.it/">Sux<span class=arrow>&#10132;</span></a>
+		<li><a href="http://vigna.di.unimi.it/music.php">Music<span class=arrow>&#10132;</span></a>
+      <li><a href="http://vigna.di.unimi.it/kitsch.php">Kitsch<span class=arrow>&#10132;</span></a>
+      </ul>
+
+    </div>
+
+    <div id="main">
+      <div class="corner-topright">&nbsp;</div>
+      <div class="corner-topleft">&nbsp;</div>
+      <div id="content">
+
+	<h1 class=first>Introduction</h1>
+	
+    <P><IMG STYLE="float: right" ALT="WebGraph" SRC="img/pack.png">WebGraph is a framework for
+	graph compression aimed at studying web graphs. It provides simple ways to manage
+	very large graphs, exploiting modern compression techniques. More precisely,
+	it is currently made of:
+	<OL>
+
+	<LI>A set of flat codes, called <em>&zeta; codes</em>, which are particularly suitable
+	for storing web graphs (or, in general, integers with power-law distribution
+	in a certain exponent range). The fact that these codes work well can be
+	easily tested empirically, but we also try to provide a <A
+    HREF="http://vigna.di.unimi.it/papers.php#BoVCWWW">detailed mathematical analysis</A>.
+
+
+	<LI>Algorithms for compressing web graphs that exploit
+	gap compression and
+	 referentiation
+	(&agrave; la <A
+	HREF="http://citeseer.nj.nec.com/randall01link.html">LINK</A>),
+	intervalisation and &zeta; codes to provide a high compression ratio  (see <A HREF="http://law.di.unimi.it/datasets.php">our datasets</A>). The
+	algorithms are controlled by several parameters, which provide
+	different tradeoffs between access speed and compression ratio.
+
+	<LI>Algorithms for accessing a compressed graph without actually decompressing it,
+	using lazy techniques that delay the decompression until it is actually necessary.
+
+	<LI>Algorithms for analysing very large graphs, such as <A HREF="http://webgraph.dsi.unimi.it/docs/it/unimi/dsi/webgraph/algo/HyperBall.html">HyperBall</A>, which
+	has been used to show that Facebook has just <a href="http://vigna.dsi.unimi.it/papers.php#BBRFDS">four degrees of separation</a>.	
+
+	<LI>A complete, <A HREF="docs">documented</A> implementation of the algorithms above in Java
+ distributed under the <A HREF="http://www.gnu.org/copyleft/gpl.html"><ACRONYM TITLE="GNU's not
+    Unix">GNU</ACRONYM> General Public License</A>. Besides a clearly defined API,
+	we also provide several classes tha modify (e.g., transpose) or
+	recompress a graph, so to experiment with various settings.
+
+	<LI><a href="http://law.di.unimi.it/">Datasets</a> for very large graph (e.g., a billion of links). These are either 
+	gathered from public sources (such as <A HREF="http://www-diglib.stanford.edu/~testbed/doc2/WebBase/">WebBase</A>),
+	or produced by <A HREF="http://law.di.unimi.it/ubicrawler">UbiCrawler</A>.
+
+	</OL>
+	
+	<P><IMG STYLE="float: right" ALT="Crawler" SRC="img/crawler.png">In the end, with WebGraph you can access and analyse very large web graphs.
+	Using WebGraph is as easy as installing a few
+	jar files and downloading a dataset. This makes studying phenomena such as PageRank, distribution of
+	graph properties of the web graph, etc. very easy.
+
+    	<P>You are welcome to use and improve WebGraph! If you find our software
+    	useful for your research, please quote <a href="http://vigna.di.unimi.it/papers.php#BoVWFI">this paper</a>.
+
+	<h1><a name=install>&#xfeff;</a>Installation</h1>
+	
+	<P><IMG STYLE="float: right" ALT="Install" SRC="img/install.png">You can grab WebGraph from 
+	<a HREF="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22it.unimi.dsi%22">Maven Central</a>.
+
+	<p>Otherwise, you have to install the 
+	<SAMP>.jar</SAMP> file coming with the distribution and the dependencies, which are gathered for your convenience
+	in a <a href="webgraph-deps.tar.gz">tarball</a>. 
+
+	<h1><a name="webgraph++">&#xfeff;</a>WebGraph++</h1>
+
+	<p>Jacob Ratkievicz has developed a <a href="http://cnets.indiana.edu/groups/nan/webgraph/">C++ version of WebGraph</a> that you
+	might want to try. The library exposes a <a href="docs/it/unimi/dsi/webgraph/BVGraph.html">BVGraph</a> as an
+	object of the <a href="http://www.boost.org/libs/graph/doc/index.html">Boost Graph Library</a>, so it is easily integrable with other code.
+
+	<h1><a name="pyWebgraph">&#xfeff;</a>pyWebgraph</h1>
+
+	<p><a href="http://santini.di.unimi.it/">Massimo Santini</a> has developed a <a href="http://code.google.com/p/py-web-graph/">front-end that interfaces Jython with WebGraph</a>.
+	It makes exploring small portions of very large graphs very easy and interactive.
+
+	<h1><a name="MATLAB">&#xfeff;</a>WebGraph for MATLAB®</h1>
+
+<a href="http://www.stanford.edu/~dgleich/">David Gleich</a> has developed a  
+<a href="http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?objectId=16248&amp;objectType=FILE">MATLAB® package</a>
+to access WebGraph-encoded data easily.
+
+	  </div>
+      <div class="corner-bottomright">&nbsp;</div>
+      <div class="corner-bottomleft">&nbsp;</div>
+    </div>
+    
+    <div id="right">
+      
+      <h1>Download (standard) (Java&nbsp;&ge;6)</h1>
+      <p><ul>
+	<li><a HREF="webgraph-3.4.0-bin.tar.gz">binary tarball</A>
+	<li><a HREF="webgraph-3.4.0-src.tar.gz">source tarball</A>
+	<li><a HREF="webgraph-deps.tar.gz">dependencies tarball</A>
+	<li><a HREF="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22it.unimi.dsi%22">Maven</a>
+	<li><a HREF="http://law.di.unimi.it/datasets.php">Datasets</A>
+      </ul>
+
+      <h1>Documentation (standard)</h1>
+      <p><ul>
+      <li><a HREF="docs">API</A>
+      <li><a HREF="CHANGES">CHANGES</A>
+      </ul>
+      
+
+      <h1>Download (big) (Java&nbsp;&ge;6)</h1>
+      <p><ul>
+	<li><a HREF="webgraph-big-3.3.3-bin.tar.gz">binary tarball</A>
+	<li><a HREF="webgraph-big-3.3.3-src.tar.gz">source tarball</A>
+	<li><a HREF="webgraph-big-deps.tar.gz">dependencies tarball</A>
+	<li><a HREF="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22it.unimi.dsi%22">Maven</a>
+	<li><a HREF="http://law.di.unimi.it/datasets.php">Datasets</A>
+      </ul>
+
+      <h1>Documentation (big)</h1>
+      <p><ul>
+      <li><a HREF="docs-big">API</A>
+      <li><a HREF="CHANGES-big">CHANGES</A>
+      </ul>
+      
+      
+      <h1>Papers</h1>
+      <p><ul>
+	<li>A <A HREF="http://vigna.di.unimi.it/papers.php#BoVWFI">detailed description</A>
+	  of the compression algorithms used in WebGraph, published in the proceedings of
+    the <A href="http://www2004.org">Thirteenth International World&ndash;Wide Web Conference</A>.
+	  
+	<li>A <A
+	    HREF="http://vigna.di.unimi.it/papers.php#BoVCWWW">mathematical analysis</A> of
+	  the performance of &gamma;, &delta; and &zeta; codes against power-law distributions.
+      
+	<li>Some <A
+	    HREF="http://vigna.di.unimi.it/papers.php#BSVPWG">quite surprising experiments</A> showing
+		that the transpose graph reacts very peculiarly to compression after lexicographical 
+		or Gray-code sorting.
+
+	<li>A <A
+	    HREF="http://vigna.di.unimi.it/papers.php#BRVH">paper</A> about
+	    <A HREF="http://webgraph.dsi.unimi.it/docs/it/unimi/dsi/webgraph/algo/HyperBall.html">HyperBall</A> (then named HyperANF), our tool for computing an approximation of the
+	    neighbourhood function, reachable nodes and geometric centralities of massive graphs. More information can be found in this
+		<a href="http://vigna.di.unimi.it/papers.php#BoVHB">preprint</a>.
+      
+	<li>The <A HREF="http://vigna.di.unimi.it/papers.php#BBRFDS">paper</A> were we show
+		using <A HREF="http://webgraph.dsi.unimi.it/docs/it/unimi/dsi/webgraph/algo/HyperBall.html">HyperBall</A> that <A HREF="http://www.nytimes.com/2011/11/22/technology/between-you-and-me-4-74-degrees.html">Facebook has four degrees of separation</A>.</ul>
+      
+      <h1>Trivia</h1>
+      
+      <P>When WebGraph was released, it was featured on <a href="http://slashdot.org/article.pl?sid=03/06/12/1742209&amp;mode=thread&amp;tid=134">Slashdot</a>.
+
+      <P><a
+		href="docs/it/unimi/dsi/webgraph/algo/HyperApproximateNeighbourhoodFunction.html">HyperANF</a>
+		was used to find out that on average there are just <a
+		href="http://vigna.di.unimi.it/papers.php#BBRFDS">four degrees of
+		separation</a> on <a href="http://facebook.com/">Facebook</a>, and the
+		experiment was reported by the <a
+		href="http://nytimes.com/2011/11/22/technology/between-you-and-me-4-74-degrees.html">New
+		York Times</a>. Alas, the degrees were actually 3.74 (one less than
+		the <a href="http://law.di.unimi.it/webdata/fb-current/">average distance</a>), but the off-by-one between graph theory
+		(&ldquo;distance&rdquo;) and sociology (&ldquo;degrees of
+		separation&rdquo;) generated a lot of confusion.
+      
+	<h1><a href="http://validator.w3.org/check/referer">This is valid HTML 4.01</a></h1>
+
+	<img alt="GPLv3" style="float: right" src="img/gplv3.png">
+
+    </div>
+  </body>
+</html>

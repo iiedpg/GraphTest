@@ -1,0 +1,6 @@
+headers/sssp.h algorithms/libbsp_sssp.so /input/1.txt /output/bsp/sssp1
+headers/sssp.h algorithms/libbsp_sssp.so /input/2.txt /output/bsp/sssp2
+headers/pagerank.h algorithms/libbsp_pagerank.so /input/1.txt /output/bsp/pr1
+headers/pagerank.h algorithms/libbsp_pagerank.so /input/2.txt /output/bsp/pr2
+headers/bfs.h algorithms/libbsp_bfs.so /input/1.txt /output/bsp/bfs1
+headers/bfs.h algorithms/libbsp_bfs.so /input/2.txt /output/bsp/bfs2

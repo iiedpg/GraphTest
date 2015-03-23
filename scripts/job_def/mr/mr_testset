@@ -1,0 +1,139 @@
+#graph.BFSBig /input/2.txt /output/spark/bfs/2
+#graph.BFSBig /input/15000.txt /output/spark/bfs/15000
+#graph.BFSBig /input/42000.txt /output/spark/bfs/42000
+#graph.BFSBig /input/90000.txt  /output/spark/bfs/90000
+#graph.SSSPBig /input/42000.txt /output/spark/bfs/42000
+#graph.SSSPBig /input/90000.txt /output/spark/bfs/90000
+#graph.PageRankBagel /input/15000.txt /output/spark/bfs/15000
+#graph.PageRankBagel /input/42000.txt /output/spark/bfs/42000
+#graph.PageRankBagel /input/90000.txt /output/spark/bfs/90000
+#graph.SSSPBagel /input/15000.txt /output/spark/sssp/15000
+#graph.SSSPBagel /input/42000.txt /output/spark/sssp/42000
+#graph.SSSPBagel /input/1000000.txt /output/spark/sssp/1000000
+#SSSP /input/2.txt /output/hama/sssp/2
+#SSSP /input/1.txt /output/hama/sssp/1
+#SSSP /input/4.txt /output/hama/sssp/4
+#SSSP /input/1.txt /output/hama/sssp/1
+#SSSP /input/2.txt /output/hama/sssp/2
+#SSSP /input/15000.txt /output/hama/sssp/15000
+#SSSP /input/42000.txt /output/hama/sssp/42000
+#SSSP /input/1000000.txt /output/hama/sssp/1000000
+#PageRank /input/15000.txt /output/hama/pr/15000
+#PageRank /input/42000.txt /output/hama/pr/42000
+#PageRank /input/1000000.txt /output/hama/pr/1000000
+#PageRank /input/1.txt /output/hama/pr/1
+#class input med_input output
+#SSSP /input/1.txt /input/hadoop/sssp/1 /output/hadoop/sssp/1 n
+#SSSP /input/2.txt /input/hadoop/sssp/2 /output/hadoop/sssp/2 n
+#SSSP /input/15000.txt /input/hadoop/sssp/15000 /output/hadoop/sssp/15000 n
+#SSSP /input/42000.txt /input/hadoop/sssp/42000 /output/hadoop/sssp/42000 n
+#PageRank /input/2.txt /output/hadoop/pr/2 2 3
+#PageRank /input/15000.txt /output/hadoop/pr/15000 2 4 
+#PageRank /input/15000.txt /output/hadoop/pr/15000 4 4 
+#PageRank /input/15000.txt /output/hadoop/pr/15000 2 2
+#PageRank /input/15000.txt /output/hadoop/pr/15000 8 4 
+#PageRank /input/15000.txt /output/hadoop/pr/15000 16 4 
+#PageRank /input/15000.txt /output/hadoop/pr/15000 32 4 
+#Pagerank /input/15000.txt /output/hadoop/pr/15000 n
+#Pagerank /input/42000.txt /output/hadoop/pr/42000 n
+#BFS /input/15000.txt /input/hadoop/bfs/15000 /output/hadoop/bfs/15000 n
+#BFS /input/42000.txt /input/hadoop/bfs/42000 /output/hadoop/bfs/42000 n
+#PageRank /input/ec.txt /output/hadoop/pr/ec 4 2
+#PageRank /input/ed.txt /output/hadoop/pr/ed 4 2
+#PageRank /input/15000.txt /output/hadoop/pr/15000 2 2
+#PageRank /input/ea.txt /output/hadoop/pr/ea 15 10 
+#PageRank /input/eb.txt /output/hadoop/pr/eb 4 2
+#PageRank /input/ed.txt /output/hadoop/pr/ed 15 10
+#PageRank /input/ef.txt /output/hadoop/pr/ef 4 2
+#PageRank /input/eg.txt /output/hadoop/pr/eg 15 10
+#SSSP /input/2.txt /output/hadoop/sssp/2 15 0 
+#SSSP /input/ea.txt /output/hadoop/sssp/ea 15 0 
+#SSSP /input/ed.txt /output/hadoop/sssp/ed 15 0 
+#SSSP /input/eg.txt /output/hadoop/sssp/eg 15 0 
+#BFS /input/ea.txt /output/hadoop/bfs/ea 15 0 
+#BFS /input/ed.txt /output/hadoop/bfs/ed 15 0 
+#BFS /input/eg.txt /output/hadoop/bfs/eg 15 0 
+#DirectToUnDirect /input/ea.txt /output/ud/ea 15 0
+#DirectToUnDirect /input/ed.txt /output/ud/ed 15 0
+#DirectToUnDirect /input/eg.txt /output/ud/eg 15 0
+#DirectToUnDirect /input/1.txt /output/ud/1 15 0
+#DirectToUnDirect /input/2.txt /output/ud/2 15 0
+#Recommendation /input/Friend/map_enron.txt /output/test/map/enron 15 0
+#Recommendation /input/Friend/map_ljournal.txt /output/test/map/jour 15 0
+#DirectToUnDirect /input/1.txt /output/ud/1.txt 8 0
+#DirectToUnDirect /input/1.txt /output/ud/1 2 0
+#DirectToUnDirect /input/gy/uk-2007-05_100000.txt /output/ud/uk-2007-05_100000.txt 8 0
+#DirectToUnDirect /input/gy/cnr-2000.txt /output/ud/cnr-2000.txt 8 0
+#DirectToUnDirect /input/gy/frwiki-2013.txt /output/ud/frwiki-2013.txt 8 0
+#DirectToUnDirect /input/gy/hollywood-2011.txt /output/ud/hollywood-2011.txt 8 0
+#DirectToUnDirect /input/gy/ljournal-2008.txt /output/ud/ljournal-2008.txt 8 0
+#DirectToUnDirect /input/gy/amazon-2008.txt /output/ud/amazon-2008.txt 8 0
+#DirectToUnDirect /input/gy/1.txt /output/ud/n1 8 0
+#DirectToUnDirect /input/gy/2.txt /output/ud/n2 8 0
+#DirectToUnDirect /input/gy/3.txt /output/ud/n3 8 0
+#DirectToUnDirect /input/gy/4.txt /output/ud/n4 8 0
+#DirectToUnDirect /input/gy/5.txt /output/ud/n5 8 0
+#DirectToUnDirect /input/gy/6.txt /output/ud/n6 8 0
+#DirectAddWeight /input/1.txt /output/wd/n1 8 0
+#DirectAddWeight /input/gy/1.txt /output/wd/n1 8 0
+#DirectAddWeight /input/gy/2.txt /output/wd/n2 8 0
+#DirectAddWeight /input/gy/3.txt /output/wd/n3 8 0
+#DirectAddWeight /input/gy/4.txt /output/wd/n4 8 0
+#DirectAddWeight /input/gy/5.txt /output/wd/n5 8 0
+#DirectAddWeight /input/gy/7.txt /output/wd/n7 10 0
+#DirectAddWeight /input/gy/8.txt /output/wd/n8 10 0
+#DirectAddWeight /input/gy/9.txt /output/wd/n9 10 0
+#DirectAddWeight /input/gy/10.txt /output/wd/n10 10 0
+#DirectAddWeight /input/gy/11.txt /output/wd/n11 10 0
+#DirectToUnDirect /input/gy/7.txt /output/ud/n7 10 0
+#DirectToUnDirect /input/gy/8.txt /output/ud/n8 10 0
+#DirectToUnDirect /input/gy/9.txt /output/ud/n9 10 0
+#DirectToUnDirect /input/gy/10.txt /output/ud/n10 10 0
+#DirectToUnDirect /input/gy/11.txt /output/ud/n11 10 0
+PageRank /input/gy/9.txt /output/hadoop/pr/gy/9 64 2
+PageRank /input/gy/9.txt /output/hadoop/pr/gy/9 32 2
+PageRank /input/gy/9.txt /output/hadoop/pr/gy/9 16 2
+PageRank /input/gy/9.txt /output/hadoop/pr/gy/9 8 2
+PageRank /input/gy/9.txt /output/hadoop/pr/gy/9 4 2
+PageRank /input/gy/9.txt /output/hadoop/pr/gy/9 2 2
+PageRank /input/gy/4.txt /output/hadoop/pr/gy/9 64 2
+PageRank /input/gy/4.txt /output/hadoop/pr/gy/9 32 2
+PageRank /input/gy/4.txt /output/hadoop/pr/gy/9 16 2
+PageRank /input/gy/4.txt /output/hadoop/pr/gy/9 8 2
+PageRank /input/gy/4.txt /output/hadoop/pr/gy/9 4 2
+PageRank /input/gy/4.txt /output/hadoop/pr/gy/9 2 2
+PageRank /input/gy/6.txt /output/hadoop/pr/gy/9 64 2
+PageRank /input/gy/6.txt /output/hadoop/pr/gy/9 32 2
+PageRank /input/gy/6.txt /output/hadoop/pr/gy/9 16 2
+PageRank /input/gy/6.txt /output/hadoop/pr/gy/9 8 2
+PageRank /input/gy/6.txt /output/hadoop/pr/gy/9 4 2
+PageRank /input/gy/6.txt /output/hadoop/pr/gy/9 2 2
+PageRank /input/gy/5.txt /output/hadoop/pr/gy/9 64 2
+PageRank /input/gy/5.txt /output/hadoop/pr/gy/9 32 2
+PageRank /input/gy/5.txt /output/hadoop/pr/gy/9 16 2
+PageRank /input/gy/5.txt /output/hadoop/pr/gy/9 8 2
+PageRank /input/gy/5.txt /output/hadoop/pr/gy/9 4 2
+PageRank /input/gy/5.txt /output/hadoop/pr/gy/9 2 2
+PageRank /input/gy/11.txt /output/hadoop/pr/gy/9 64 2
+PageRank /input/gy/11.txt /output/hadoop/pr/gy/9 32 2
+PageRank /input/gy/11.txt /output/hadoop/pr/gy/9 16 2
+PageRank /input/gy/11.txt /output/hadoop/pr/gy/9 8 2
+PageRank /input/gy/11.txt /output/hadoop/pr/gy/9 4 2
+PageRank /input/gy/11.txt /output/hadoop/pr/gy/9 2 2
+PageRank /input/gy/7.txt /output/hadoop/pr/gy/9 64 2
+PageRank /input/gy/7.txt /output/hadoop/pr/gy/9 32 2
+PageRank /input/gy/7.txt /output/hadoop/pr/gy/9 16 2
+PageRank /input/gy/7.txt /output/hadoop/pr/gy/9 8 2
+PageRank /input/gy/7.txt /output/hadoop/pr/gy/9 4 2
+PageRank /input/gy/7.txt /output/hadoop/pr/gy/9 2 2
+#PageRank /input/gy/4.txt /output/hadoop/pr/gy/4 16 3
+#PageRank /input/gy/6.txt /output/hadoop/pr/gy/6 16 3
+#PageRank /input/gy/5.txt /output/hadoop/pr/gy/5 16 3
+#PageRank /input/gy/11.txt /output/hadoop/pr/gy/11 16 3
+#PageRank /input/gy/7.txt /output/hadoop/pr/gy/7 16 3
+#PageRank /input/gy/8.txt /output/hadoop/pr/gy/8 16 3
+#PageRank /input/gy/12.txt /output/hadoop/pr/gy/12 16 3
+#DirectToUnDirect /input/gy/12.txt /output/ud/n12 16 0
+#DirectToUnDirect /input/thirty.txt /output/ud/thirty 16 0
+#DirectToUnDirect /input/ofmi /output/ud/ofmi 4 0
+#deg2friend /input/thirty_edge /output/thirty_edge 4 0

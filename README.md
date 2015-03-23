@@ -8,9 +8,10 @@ still doubled due to fine-grained lock conflicts. Overall, we analyzed the pros 
 
 ## Directories
 
-```
 datasets: Our scripts to fetch dataset and transform it to our input form from law.di.unimi.it/datasets.php
+
 framewors: We modified the framework source codes to output execution times of specific actions, memory consumption and some other variables. On consideration of the project size, we only upload the source codes. However, the directories is the same, users could download original programs and substitute the source codes with rsync.
+
 algorithms: The implementations of our benchmark algorithms on each framework.
+
 scripts: Our scripts to automatically run algorithms on a series of input graphs, and transform the added outputs to human-readable format.
-```
